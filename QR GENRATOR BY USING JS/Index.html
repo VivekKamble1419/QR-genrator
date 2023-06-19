@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>JavaScript QR Genarator || 04-04-2023</title>
+    <link rel="icon" href="Title_logo.png" type="image/x-icon"/>
+
+</head>
+<body>
+    <!-- Box Starts  -->
+    <div class="box">
+        <!-- header section Starts -->
+<div class="qr-header">
+<h1>Genarate QR Code</h1>
+<input type="text" placeholder="Enter Your Text or URL" id="qr-text">
+<div>
+<label for="sizes">Select QR Size</label>
+<select name="" id="sizes">
+    <option value="100">100x100</option>
+    <option value="200">200x200</option>
+    <option value="300">300x300</option>
+    <option value="400">400x400</option>
+    <option value="500">500x500</option>
+    <option value="600">600x600</option>
+    <option value="700">700x700</option>
+    <option value="800">800x800</option>
+    <option value="900">900x900</option>
+    <option value="1000">1000x1000</option>
+</select>
+</div>
+</div>
+        <!-- header section Ends -->
+
+        <!-- Body section Starts -->
+<div class="qr-body"></div>
+        <!-- Body section Ends -->
+
+        <!-- Footer section Starts -->
+<div class="qr-footer">
+    <a href="" id="genrateBtn">Genrate</a>
+    <a href="" id="downloadBtn" download="QR_Code.png">Download</a><!--the Download attribute is used to set type of downloded file-->
+</div>
+        <!-- Footer section End -->
+
+    </div>
+    <!-- Box End -->
+    <script src="Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+</body>
+</html>
