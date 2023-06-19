@@ -1,0 +1,112 @@
+:root{
+    --bg-col:#d2eff8ec;
+    --primary--col:#027171dd;
+    --border--radius:8px;
+    --secondary--col:#fff;
+    --border--col:#7fb7c9;
+    --TEXT:#000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* all body part will go horizantaly center center*/
+    align-items: center; /* all body part will go vartically center center*/
+    background-color: var(--bg-col);
+}
+
+.box{
+    
+    background-color:var(--primary--col) ;
+    padding: 30px;
+    width: 400px;
+    border-radius: var(--border--radius);
+    box-shadow: 15px 20px  15px rgb(66, 66, 66) ;
+
+}
+.qr-header h1{
+    font-size: 26px;
+    text-align: center;
+    color: var(--secondary--col);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.qr-header input{
+    width: 100%;
+    margin-block: 12px;  /*margins for top and bottom*/ 
+}
+.qr-header input,select{
+    padding: 8px;
+    border-radius: var(--border--radius);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--border--col);
+}
+.qr-header label{
+    color: var(--secondary--col);
+    font-size: 20px;
+}
+.qr-header div{
+    display: flex; /*this is for all content arrange one by one in one line*/
+    justify-content: space-between; /*add apace between two componants*/
+}
+.qr-footer{
+    display: flex;
+    justify-content: center;
+}
+.qr-footer a{
+    background-color: var(--secondary--col);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 36px;
+    margin-inline: 2px;/*adding margine left and right both*/
+    color: var(--primary--col);
+    font-weight: 600;
+    border-radius: var(--border--radius);
+}
+.qr-body{
+    display: grid; /*use for center all content or items*/
+    place-items: center; /*use for center all content or items*/
+    padding: 20px;
+
+}
+
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding:20px;
+    border:0.5px solid var(--border--col);
+    border-radius: var(--border--radius);
+}
+
+
+@media screen and (max-width:520px){
+    .box{
+        width:80%;
+
+    }
+
+    .qr-footer a{
+        padding: 12px;
+        font-size: 16px;
+    }
+    .qr-header label{
+        font-size: 15px;
+    }
+
+    .qr-header input,select{
+        padding: 5px;
+        font-size: 13px;
+    }
+
+}
